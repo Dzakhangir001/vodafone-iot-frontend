@@ -1,0 +1,29 @@
+#import "@/features/core/components/node-content-header/node-content-header.gql"
+#import "@/features/core/router/node-location.gql"
+#import "../../iot-gateway/iot-gateways.gql"
+#import "../../master-gateway/master-gateway.gql"
+
+query FloorNodeContentQuery($nodeId: ID!) {
+  data: node(id: $nodeId) {
+    id
+    apartments: children {
+      id
+      name
+      type
+      devices {
+        id
+        role
+        site {
+          id
+          context: ancestor(minDistance: 0, maxDistance: 1, types: [APARTMENT, ROOM]) {
+            id
+            ...NodeLocationGeneratorFragment
+          }
+        }
+      }
+    }
+    ...NodeContentHeaderFragment
+    ...MasterGatewayFragment
+    ...IotGatewaysFragment
+  }
+}

@@ -1,0 +1,26 @@
+#import "@core/components/node-content-header/node-content-header.gql"
+#import "../../binding-wizard/binding-wizard.gql"
+#import "../../iot-gateway/iot-gateways.gql"
+#import "../../master-gateway/master-gateway.gql"
+
+query ApartmentNodeContentQuery($nodeId: ID!) {
+  data: node(id: $nodeId) {
+    id
+    context: ancestor(minDistance: 0, maxDistance: 1, types: [APARTMENT, ROOM]) {
+      id
+      rooms: descendants(minDistance: 0, types: [ROOM]) {
+        id
+        type
+        name
+        devices {
+          id
+          role
+        }
+      }
+    }
+    ...BindingWizardFragment
+    ...NodeContentHeaderFragment
+    ...MasterGatewayFragment
+    ...IotGatewaysFragment
+  }
+}

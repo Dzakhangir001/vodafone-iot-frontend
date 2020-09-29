@@ -1,0 +1,23 @@
+fragment AppSmokeDetectorFilesFragment on Query {
+  files: smokeDetectorProtocols(contextNodeIds: [$nodeId], skip: $skip, take: $take) {
+    items {
+      id
+      createdAt
+      context {
+        type
+        name
+      }
+      devices {
+        serial
+        checks {
+          name
+          ok
+        }
+        site {
+          name
+        }
+      }
+    }
+    count
+  }
+}

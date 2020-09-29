@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="53">
+    <defs>
+        <clipPath id="a">
+            <path fill="#fff" d="M52 2.09h18v12.553H52z"/>
+        </clipPath>
+        <clipPath id="b">
+            <path fill="#fff" d="M52 38.36h18v12.553H52z"/>
+        </clipPath>
+        <clipPath id="c">
+            <path fill="#fff" d="M52 13.95h18v25.105H52z"/>
+        </clipPath>
+        <clipPath id="d">
+            <path fill="#fff" d="M50 0h22v53H50z"/>
+        </clipPath>
+    </defs>
+    <g fill="none" stroke-width="2">
+        <path stroke="#c8c3c8" d="M52 2.09v0h18v12.553H52v0z" clip-path="url(#a)" transform="translate(-50)"/>
+        <path stroke="#c8c3c8" d="M52 38.36v0h18v12.553H52v0z" clip-path="url(#b)" transform="translate(-50)"/>
+        <path stroke="#c8c3c8" d="M52 13.95v0h18v25.105H52v0z" clip-path="url(#c)" transform="translate(-50)"/>
+        <path stroke="#ccc7cc" d="M50 0v0h22v53H50v0z" clip-path="url(#d)" transform="translate(-50)"/>
+    </g>
+</svg>

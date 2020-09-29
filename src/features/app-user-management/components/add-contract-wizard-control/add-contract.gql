@@ -1,0 +1,5 @@
+mutation AppUserManagementAddContractMutation($input: AddContractInput!) {
+  addContract(input: $input) {
+    id
+  }
+}

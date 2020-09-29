@@ -1,0 +1,5 @@
+fragment NodeLocationGeneratorFragment on Node {
+  id
+  type
+  name
+}

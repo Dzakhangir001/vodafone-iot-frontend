@@ -1,0 +1,26 @@
+#import "@core/components/node-content-header/node-content-header.gql"
+#import "../wifi-panel/wifi-panel.gql"
+
+query AppWifiDetailsQuery($id: ID!) {
+  node(id: $id) {
+    id
+    ...NodeContentHeaderFragment
+  }
+  wifi(id: $id) {
+    id
+    gateways {
+      gateway {
+        serial
+        site {
+          id
+          name
+        }
+        masterOf {
+          id
+        }
+      }
+      ok
+    }
+    ...AppWifiWifiPanelFragment
+  }
+}

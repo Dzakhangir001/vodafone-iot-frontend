@@ -1,0 +1,23 @@
+#import "../../util/metrics.gql"
+
+fragment AppSmokeDetectorStateListFragment on Node {
+  apartments: descendants(types: [APARTMENT]) {
+    id
+    name
+    floor: parent {
+      id
+      name
+    }
+    devices(roles: ["SMOKE_DETECTOR"]) {
+      id
+      meta {
+        serial
+      }
+      room: site {
+        id
+        name
+      }
+      ...AppSmokeDetectorMetricsFragment
+    }
+  }
+}

@@ -1,0 +1,31 @@
+query DevicePanelQuery($deviceId: ID!) {
+  data: device(id: $deviceId) {
+    id
+    role
+    bound
+    meta {
+      mountingNotes
+      notes
+      serial
+      manufacturer
+      encryptionKey
+    }
+    site {
+      id
+      name
+      parent {
+        type
+        name
+      }
+    }
+    gateway {
+      id
+      serial
+    }
+    recentAlerts(take: 1) {
+      items {
+        startDate
+      }
+    }
+  }
+}

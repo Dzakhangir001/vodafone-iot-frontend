@@ -1,0 +1,18 @@
+query AppUserManagmentCustomerPanelQuery($skip: Int, $take: Int) {
+  customers(skip: $skip, take: $take) {
+    items {
+      id
+      name
+      externalId
+      contracts {
+        count
+      }
+      contact {
+        id
+        name
+        email
+      }
+    }
+    count
+  }
+}

@@ -1,0 +1,80 @@
+#import "@/features/core/components/alert-panel/alert-panel.gql"
+#import "@/features/core/components/node-content-header/node-content-header.gql"
+#import "../../iot-gateway/iot-gateways.gql"
+#import "../../master-gateway/master-gateway.gql"
+
+fragment PropertyNodeContentFloorChildrenFragment on Node {
+  id
+  type
+  name
+  devices {
+    id
+    role
+    alerts {
+      count
+      severity
+    }
+  }
+  alerts {
+    count
+    severity
+  }
+  gateways(deep: true) {
+    id
+  }
+}
+
+query PropertyNodeContentQuery($nodeId: ID!) {
+  data: node(id: $nodeId) {
+    id
+    gateways {
+      id
+      serial
+      state
+      lastReportDate
+    }
+    floors: children {
+      id
+      name
+      type
+      meta {
+        floorType
+      }
+      apartments: descendants(maxDistance: 1, types: [APARTMENT]) {
+        ...PropertyNodeContentFloorChildrenFragment
+      }
+      rooms: descendants(maxDistance: 1, types: [ROOM]) {
+        ...PropertyNodeContentFloorChildrenFragment
+      }
+      iotGateways: gateways(deep: true) {
+        id
+        serial
+        state
+        lastReportDate
+      }
+      devices {
+        id
+        bound
+        role
+        alerts {
+          count
+          severity
+        }
+        context: path(filter: { types: [APARTMENT, ROOM] }, first: 1) {
+          id
+          name
+        }
+      }
+      alerts {
+        count
+        severity
+      }
+      ...IotGatewaysFragment
+    }
+    alerts {
+      ...AlertPanelFragment
+    }
+    ...NodeContentHeaderFragment
+    ...MasterGatewayFragment
+  }
+}

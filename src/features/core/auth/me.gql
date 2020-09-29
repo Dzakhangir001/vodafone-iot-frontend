@@ -1,0 +1,8 @@
+query CoreMe {
+  me {
+    id
+    name
+    email
+    apps
+  }
+}

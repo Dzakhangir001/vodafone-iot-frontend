@@ -1,0 +1,42 @@
+fragment AppSmokeDetectorMetricsFragment on Device {
+  connection: metric(name: "CONNECTION", kind: DISCRETE) {
+    ... on DiscreteMetric {
+      latestDataPoint {
+        date
+        value
+      }
+    }
+  }
+  battery: metric(name: "BatteryLow", kind: DISCRETE) {
+    ... on DiscreteMetric {
+      latestDataPoint {
+        date
+        value
+      }
+    }
+  }
+  pollution: metric(name: "DustLevel", kind: CONTINUOUS) {
+    ... on ContinuousMetric {
+      latestDataPoint {
+        date
+        value
+      }
+    }
+  }
+  montage: metric(name: "IsInRemovedState", kind: DISCRETE) {
+    ... on DiscreteMetric {
+      latestDataPoint {
+        date
+        value
+      }
+    }
+  }
+  radio: metric(name: "IsInFraudState", kind: DISCRETE) {
+    ... on DiscreteMetric {
+      latestDataPoint {
+        date
+        value
+      }
+    }
+  }
+}

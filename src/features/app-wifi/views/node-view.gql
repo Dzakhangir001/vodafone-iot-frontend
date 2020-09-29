@@ -1,0 +1,6 @@
+query AppWifiNodeViewQuery($nodeId: ID!) {
+  data: node(id: $nodeId) {
+    id
+    type
+  }
+}

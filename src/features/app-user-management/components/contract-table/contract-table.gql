@@ -1,0 +1,26 @@
+fragment AppUserManagmentContractTableFragment on Contract {
+  id
+  externalId
+  customer {
+    id
+    name
+    externalId
+  }
+  properties {
+    count
+  }
+  meta {
+    apartmentCount
+    companyName
+    companyAddress {
+      street
+      postal
+      locality
+    }
+    endDate
+    offer
+    salesPartner
+    signingDate
+    startDate
+  }
+}

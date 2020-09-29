@@ -1,0 +1,30 @@
+#import "../components/contract-table/contract-table.gql"
+
+query AppUserManagmentCustomerViewQuery($id: ID!) {
+  customer(id: $id) {
+    id
+    creationDate
+    modificationDate
+    version
+    name
+    externalId
+    contact {
+      id
+      name
+      email
+    }
+    contracts {
+      items {
+        ...AppUserManagmentContractTableFragment
+      }
+      count
+    }
+    directories {
+      items {
+        id
+        name
+      }
+      count
+    }
+  }
+}

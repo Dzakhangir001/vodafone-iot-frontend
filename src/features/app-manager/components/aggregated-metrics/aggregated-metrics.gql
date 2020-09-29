@@ -1,0 +1,33 @@
+query AppManagerAggregatedMetricsQuery($nodeId: ID!) {
+  data: node(id: $nodeId) {
+    id
+    HEAT_METER_COUNTER_CurrentEnergy: aggregatedMetric(deviceRole: "HEAT_METER_COUNTER", name: "CurrentEnergy") {
+      total
+      count
+      sum
+    }
+    HEAT_METER_COUNTER_CurrentDate: aggregatedMetric(deviceRole: "HEAT_METER_COUNTER", name: "CurrentDate") {
+      count
+      min
+      max
+    }
+    HEAT_METER_COUNTER_LastPeriodEnergy: aggregatedMetric(deviceRole: "HEAT_METER_COUNTER", name: "LastPeriodEnergy") {
+      count
+      sum
+    }
+    HEAT_METER_COUNTER_LastPeriodEnd: aggregatedMetric(deviceRole: "HEAT_METER_COUNTER", name: "LastPeriodEnd") {
+      count
+      min
+      max
+    }
+    HEAT_METER_COUNTER_LastMonthEnergy: aggregatedMetric(deviceRole: "HEAT_METER_COUNTER", name: "LastMonthEnergy") {
+      count
+      sum
+    }
+    HEAT_METER_COUNTER_LastMonthEnd: aggregatedMetric(deviceRole: "HEAT_METER_COUNTER", name: "LastMonthEnd") {
+      count
+      min
+      max
+    }
+  }
+}

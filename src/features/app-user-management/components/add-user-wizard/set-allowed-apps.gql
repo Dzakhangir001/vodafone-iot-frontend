@@ -1,0 +1,8 @@
+mutation AppUserManagementSetAllowedAppsForUserMutation($input: SetAllowedAppsForUserInput!) {
+  setAllowedAppsForUser(input: $input) {
+    user {
+      id
+      apps
+    }
+  }
+}

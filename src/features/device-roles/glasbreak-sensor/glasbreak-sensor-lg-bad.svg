@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="89" height="87">
+    <defs>
+        <clipPath id="a">
+            <path fill="#fff" d="M0 0h80v80H0z"/>
+        </clipPath>
+        <clipPath id="b">
+            <path fill="#fff" d="M4 4h72v16H4z"/>
+        </clipPath>
+        <clipPath id="c">
+            <path fill="#fff" d="M4 22h49v55H4z"/>
+        </clipPath>
+        <clipPath id="d">
+            <path fill="#fff" d="M54 22h22v55H54z"/>
+        </clipPath>
+    </defs>
+    <path fill="none" stroke="#c5c5c5" stroke-miterlimit="50" stroke-width="2" d="M0 0v0h80v80H0v0z" clip-path="url(&quot;#a&quot;)"/>
+    <path fill="none" stroke="#c5c5c5" stroke-miterlimit="50" stroke-width="4" d="M4 4v0h72v16H4v0z" clip-path="url(&quot;#b&quot;)"/>
+    <path fill="none" stroke="#c5c5c5" stroke-miterlimit="50" stroke-width="4" d="M4 22v0h49v55H4v0z" clip-path="url(&quot;#c&quot;)"/>
+    <path fill="none" stroke="#c5c5c5" stroke-miterlimit="50" stroke-width="4" d="M54 22v0h22v55H54v0z" clip-path="url(&quot;#d&quot;)"/>
+    <path fill="none" stroke="#c5c5c5" stroke-miterlimit="50" d="M19.11 22v0l-4.15 7.55v0L19.11 40v0l-4.15 9.218v0L10.814 64v0L4 67.688v0"/>
+    <path fill="none" stroke="#c5c5c5" stroke-miterlimit="50" d="M51.415 25v0l-7.488 12.574v0l-12.989 5.319v0L19 39.599v0m25.266 35.403v0L38.789 61.29v0l-13.129-3v0L16 48v0m10 10.682L31.678 43"/>
+    <path fill="#e60000" d="M76.25 87c6.627 0 12-5.373 12-12s-5.373-12-12-12-12 5.373-12 12 5.373 12 12 12z"/>
+    <path fill="#fff" d="M76 69a1 1 0 00-1 1v7a1 1 0 002 0v-7a1 1 0 00-1-1zm0 11a1 1 0 000 2 1 1 0 000-2z"/>
+</svg>

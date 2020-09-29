@@ -1,0 +1,5 @@
+mutation StartBindingProcessMutation($input: StartBindingProcessInput!) {
+  startBindingProcess(input: $input) {
+    id
+  }
+}

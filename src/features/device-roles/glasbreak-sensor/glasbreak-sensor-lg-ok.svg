@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="89">
+    <defs>
+        <clipPath id="a">
+            <path fill="#fff" d="M0 0h80v80H0z"/>
+        </clipPath>
+        <clipPath id="b">
+            <path fill="#fff" d="M4 4h72v16H4z"/>
+        </clipPath>
+        <clipPath id="c">
+            <path fill="#fff" d="M4 22h49v55H4z"/>
+        </clipPath>
+        <clipPath id="d">
+            <path fill="#fff" d="M54 22h22v55H54z"/>
+        </clipPath>
+    </defs>
+    <path fill="none" stroke="#c5c5c5" stroke-miterlimit="50" stroke-width="2" d="M0 0v0h80v80H0v0z" clip-path="url(&quot;#a&quot;)"/>
+    <path fill="none" stroke="#c5c5c5" stroke-miterlimit="50" stroke-width="4" d="M4 4v0h72v16H4v0z" clip-path="url(&quot;#b&quot;)"/>
+    <path fill="none" stroke="#c5c5c5" stroke-miterlimit="50" stroke-width="4" d="M4 22v0h49v55H4v0z" clip-path="url(&quot;#c&quot;)"/>
+    <path fill="none" stroke="#c5c5c5" stroke-miterlimit="50" stroke-width="4" d="M54 22v0h22v55H54v0z" clip-path="url(&quot;#d&quot;)"/>
+    <path fill="none" stroke="#c5c5c5" stroke-linecap="square" stroke-miterlimit="50" d="M39.5 36.5L17 59m14.5-20.5L20 50m12.5.5L21 62"/>
+    <path fill="#428600" d="M77.25 89c6.627 0 12-5.373 12-12s-5.373-12-12-12-12 5.373-12 12 5.373 12 12 12z"/>
+    <path fill="#fff" d="M71.806 75.908l3.388 3.387 7.63-7.63 1.142 1.143-8.526 8.525-.246-.247-.247.247-4.283-4.283z"/>
+</svg>

@@ -1,0 +1,28 @@
+#import "../components/alert-panel/alert-panel.gql"
+#import "../components/property-map-panel/property-map-panel.gql"
+
+query HomeViewQuery($roles: [String!]) {
+  deviceRoles(roles: $roles) {
+    role
+    deviceCount
+    devices {
+      id
+      role
+      bound
+      alerts {
+        count
+        severity
+      }
+    }
+  }
+  gateways {
+    id
+    serial
+    state
+    lastReportDate
+  }
+  recentAlerts {
+    ...AlertPanelFragment
+  }
+  ...PropertyMapPanelFragment
+}

@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "types": [
+      "jest",
+      "jest-environment-puppeteer",
+      "node"
+    ]
+  },
+  "include": [
+    "./**/*.ts"
+  ]
+}

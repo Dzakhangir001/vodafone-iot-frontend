@@ -1,0 +1,14 @@
+#import "@core/components/node-content-header/node-content-header.gql"
+#import "../components/protocol-panel/protocol.gql"
+#import "../components/state-list/state-list.gql"
+#import "../components/files-panel/files.gql"
+
+query AppSmokeDetectorNodeViewQuery($nodeId: ID!, $skip: Int, $take: Int) {
+  data: node(id: $nodeId) {
+    id
+    ...NodeContentHeaderFragment
+    ...AppSmokeDetectorProtocolFragment
+    ...AppSmokeDetectorStateListFragment
+  },
+  ...AppSmokeDetectorFilesFragment
+}

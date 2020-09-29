@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="16">
+    <defs>
+        <clipPath id="b">
+            <path fill="#fff" d="M0 4a1 1 0 011-1h6v13H1a1 1 0 01-1-1z"/>
+        </clipPath>
+        <clipPath id="h">
+            <path fill="#fff" d="M2 8h2v2H2z"/>
+        </clipPath>
+        <clipPath id="c">
+            <path fill="#fff" d="M3 12h3v4H3z"/>
+        </clipPath>
+        <clipPath id="d">
+            <path fill="#fff" d="M9 12h3v4H9z"/>
+        </clipPath>
+        <clipPath id="e">
+            <path fill="#fff" d="M8 2h2v2H8z"/>
+        </clipPath>
+        <clipPath id="f">
+            <path fill="#fff" d="M8 5h2v2H8z"/>
+        </clipPath>
+        <clipPath id="g">
+            <path fill="#fff" d="M8 8h2v2H8z"/>
+        </clipPath>
+        <clipPath id="a">
+            <path fill="#fff" d="M6 1a1 1 0 011-1h7a1 1 0 011 1v14a1 1 0 01-1 1H6z"/>
+        </clipPath>
+        <clipPath id="i">
+            <path fill="#fff" d="M2 5h2v2H2z"/>
+        </clipPath>
+        <clipPath id="j">
+            <path fill="#fff" d="M11 2h2v2h-2z"/>
+        </clipPath>
+        <clipPath id="k">
+            <path fill="#fff" d="M11 5h2v2h-2z"/>
+        </clipPath>
+        <clipPath id="l">
+            <path fill="#fff" d="M11 8h2v2h-2z"/>
+        </clipPath>
+        <clipPath id="m">
+            <path fill="#fff" d="M5 8h2v2H5z"/>
+        </clipPath>
+        <clipPath id="n">
+            <path fill="#fff" d="M5 5h2v2H5z"/>
+        </clipPath>
+    </defs>
+    <g class="icon-stroke" fill="none" stroke="#fff" stroke-miterlimit="50" stroke-width="2">
+        <path d="M6 1a1 1 0 011-1h7a1 1 0 011 1v14a1 1 0 01-1 1H6v0z" clip-path="url(#a)"/>
+        <path d="M0 4a1 1 0 011-1h6v13H1a1 1 0 01-1-1z" clip-path="url(#b)"/>
+        <path d="M3 12v0h3v4H3v0z" clip-path="url(#c)"/>
+        <path d="M9 12v0h3v4H9v0z" clip-path="url(#d)"/>
+        <path d="M8 2v0h2v2H8v0z" clip-path="url(#e)"/>
+        <path d="M8 5v0h2v2H8v0z" clip-path="url(#f)"/>
+        <path d="M8 8v0h2v2H8v0z" clip-path="url(#g)"/>
+        <path d="M2 8v0h2v2H2v0z" clip-path="url(#h)"/>
+        <path d="M2 5v0h2v2H2v0z" clip-path="url(#i)"/>
+        <path d="M11 2v0h2v2h-2v0z" clip-path="url(#j)"/>
+        <path d="M11 5v0h2v2h-2v0z" clip-path="url(#k)"/>
+        <path d="M11 8v0h2v2h-2v0z" clip-path="url(#l)"/>
+        <path d="M5 8v0h2v2H5v0z" clip-path="url(#m)"/>
+        <path d="M5 5v0h2v2H5v0z" clip-path="url(#n)"/>
+    </g>
+</svg>

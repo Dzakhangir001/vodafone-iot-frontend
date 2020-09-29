@@ -1,0 +1,15 @@
+@function fontSize($size) {
+  @return map-get($fontSizes, $size);
+}
+
+@mixin fontSize($color) {
+  font-size: fontSize($color);
+}
+
+@function lineHeight($height) {
+  @return map-get($lineHeights, $height);
+}
+
+@mixin lineHeight($height) {
+  line-height: lineHeight($height);
+}

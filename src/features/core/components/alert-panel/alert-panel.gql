@@ -1,0 +1,18 @@
+fragment AlertPanelFragment on AlertCollection {
+  items {
+    device {
+      id
+      role
+      meta {
+        serial
+      }
+      site {
+        id
+        name
+      }
+    }
+    startDate
+    name
+    severity
+  }
+}

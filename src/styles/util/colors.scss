@@ -1,0 +1,41 @@
+@function textColor($color) {
+  @return map-get($textColors, $color);
+}
+
+@mixin textColor($color) {
+  color: textColor($color);
+}
+
+@function backgroundColor($color) {
+  @return map-get($backgroundColors, $color);
+}
+
+@mixin backgroundColor($color) {
+  background-color: backgroundColor($color);
+}
+
+@function borderColor($color) {
+  @return map-get($borderColors, $color);
+}
+
+@mixin borderColor($color) {
+  border-color: borderColor($color);
+}
+
+/* Vodafone mixins */
+
+@function colorVodafone($color) {
+  @return map-get($colorsVodafone, $color);
+}
+
+@mixin colorVodafone($color) {
+  color: colorVodafone($color);
+}
+
+@function backgroundColorVodafone($color) {
+  @return map-get($backgroundColorsVodafone, $color);
+}
+
+@mixin backgroundColorVodafone($color) {
+  background-color: backgroundColorVodafone($color);
+}

@@ -1,0 +1,77 @@
+$textColors: (
+  dark: #222,
+  light: #888,
+  lighter: #aaa,
+  white: #fff,
+  red: #ff0050,
+  orange: #f5a623,
+  green: #66cd05,
+  lightblue: #4a90e2,
+  blue: #2d4196,
+);
+
+$backgroundColors: (
+  white: #fff,
+  shaded: #ededed,
+  light: #f7f8fd,
+  lightblue: #4456b4,
+  blue: #2d4196,
+  darkblue: #1f2c66,
+);
+
+$borderColors: (
+  blue: #2d4196,
+  lightblue: #4456b4,
+);
+
+/* Vodafone CI colors */
+
+$colorsVodafone: (
+  vodafone-red: rgb(230, 0, 0),
+  vodafone-white: rgb(255, 255, 255),
+  vodafone-grey: rgb(74, 77, 78),
+  fresh-orange: rgb(235, 151, 0),
+  lemon-yellow: rgb(254, 203, 0),
+  spring-green: rgb(168, 180, 0),
+  digital-green: #428600,
+  digital-green-active: #52a300,
+  turquoise: rgb(0, 124, 146),
+  red-violet: rgb(156, 42, 160),
+  aubergine: rgb(94, 39, 80),
+  black: rgb(0, 0, 0),
+  vodafone-dark-grey: rgb(51, 51, 51),
+  vodafone-violet: rgb(156, 42, 160),
+  dark-grey: rgb(51, 51, 51),
+  light-grey: rgb(244, 244, 244),
+  /*
+  * colors as HEX for the SVGS
+  */ digital-red: #e60000,
+  dark-red: #bd0000,
+  dark-red-2: #820000,
+  maroon: #990000,
+  /*
+  * Old colors saved and used until we got more informations
+  */ white: #fff,
+  grey: #888,
+  light: #d8d8d8,
+  shaded: #ededed,
+  lighter: #f7f8fd,
+  dark: #3333,
+  /*
+  * Changed (designer QA)
+  */ aqua-blue: #4a90e2,
+  vodafone-red-mouseover: rgb(210, 0, 0),
+  vodafone-red-active: rgb(190, 0, 0),
+);
+
+$backgroundColorsVodafone: (
+  main: #f4f4f4,
+  white: #fff,
+  red: #e60000,
+);
+
+$gradientsVodafone: (
+  red-1-diagonal: linear-gradient(48.12deg, #820000 0%, #e60000 50.29%, #ff0000 100%),
+  red-2-diagonal: linear-gradient(48.12deg, #a50501 0%, #ca0000 49.66%, #e80000 98.74%),
+  red-vertical: linear-gradient(0deg, #820000 0%, #e60000 50.29%, #ff0000 100%),
+);

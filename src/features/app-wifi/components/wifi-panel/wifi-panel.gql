@@ -1,0 +1,13 @@
+fragment AppWifiWifiPanelFragment on Wifi {
+  id
+  configuration {
+    ssid
+    encryptionKey
+  }
+  node {
+    id
+    name
+    type
+  }
+  ok
+}

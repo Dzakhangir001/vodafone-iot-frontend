@@ -1,0 +1,27 @@
+query CoreDeviceDetailsStatisticsQuery(
+  $deviceId: ID!
+  $name: String!
+  $kind: MetricKind
+  $dateFilter: DateFilterInput!
+  $resolution: ResolutionInput
+) {
+  statistics: metric(deviceId: $deviceId, name: $name, kind: $kind) {
+    name
+    ... on ContinuousMetric {
+      CONTINUOUS: dataSet(dateFilter: $dateFilter, resolution: $resolution) {
+        dataPoints {
+          date
+          value
+        }
+      }
+    }
+    ... on DiscreteMetric {
+      DISCRETE: dataSet(dateFilter: $dateFilter, resolution: $resolution) {
+        dataPoints {
+          date
+          value
+        }
+      }
+    }
+  }
+}

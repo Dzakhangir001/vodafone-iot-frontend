@@ -1,0 +1,6 @@
+query NodeViewQuery($nodeId: ID!) {
+  data: node(id: $nodeId) {
+    id
+    type
+  }
+}

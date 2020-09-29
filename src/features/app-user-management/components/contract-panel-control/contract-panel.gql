@@ -1,0 +1,10 @@
+#import "../contract-table/contract-table.gql"
+
+query AppUserManagmentContractPanelQuery($skip: Int, $take: Int) {
+  collection: contracts(skip: $skip, take: $take) {
+    items {
+      ...AppUserManagmentContractTableFragment
+    }
+    count
+  }
+}

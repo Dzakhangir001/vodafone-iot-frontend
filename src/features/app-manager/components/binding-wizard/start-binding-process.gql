@@ -1,0 +1,5 @@
+mutation AppManagerStartBindingProcessMutation($input: StartBindingProcessInput!) {
+  startBindingProcess(input: $input) {
+    id
+  }
+}

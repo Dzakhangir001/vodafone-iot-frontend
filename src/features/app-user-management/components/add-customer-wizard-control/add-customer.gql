@@ -1,0 +1,5 @@
+mutation AppUserManagementAddCustomerMutation($input: AddCustomerInput!) {
+  addCustomer(input: $input) {
+    id
+  }
+}

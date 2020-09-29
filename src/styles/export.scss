@@ -1,0 +1,18 @@
+/*
+This is a special CSS module file.
+
+Webpack will convert this into an ES module with a default export of the
+selector ":export".
+
+https://github.com/css-modules/icss
+*/
+
+/*
+TODO get rid of this and use something like https://github.com/loilo/node-sass-yaml-importer
+*/
+
+@import 'artifacts';
+
+:export {
+  backgroundColors: quote($backgroundColors);
+}

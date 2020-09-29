@@ -1,0 +1,16 @@
+/*
+  Global SCSS artifacts that do not produce actual CSS when transpiled, like
+  (SCSS) variables, mixins, functions and so on.
+  This file will be automatically imported into all components SCSS style
+  blocks.
+*/
+
+@import 'variables/breakpoints';
+@import 'variables/colors';
+@import 'variables/fonts';
+
+@import 'util/breakpoints';
+@import 'util/fonts';
+@import 'util/colors';
+@import 'util/px2rem';
+@import 'util/text-overflow';

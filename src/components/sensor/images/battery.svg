@@ -1,0 +1,6 @@
+<svg width="20" height="10" xmlns="http://www.w3.org/2000/svg">
+    <g class="icon" fill="none" fill-rule="evenodd">
+        <path class="stroke" stroke="#C5C5C5" stroke-width="2" d="M18.943 6.732v-3.51h-.85L17.218 1H2a1 1 0 00-1 1v6a1 1 0 001 1h15.212l.877-2.268h.854z"/>
+        <path class="fill" fill="#C5C5C5" d="M3 3h13v4H3z"/>
+    </g>
+</svg>

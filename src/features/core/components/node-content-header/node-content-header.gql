@@ -1,0 +1,8 @@
+#import "../../router/node-location.gql"
+
+fragment NodeContentHeaderFragment on Node {
+  name
+  ancestors {
+    ...NodeLocationGeneratorFragment
+  }
+}

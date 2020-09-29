@@ -1,0 +1,8 @@
+#import "../../router/node-location.gql"
+
+fragment CoreNodeTreeBarControlNodeFragment on Node {
+  id
+  type
+  name
+  ...NodeLocationGeneratorFragment
+}

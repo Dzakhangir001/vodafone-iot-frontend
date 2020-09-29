@@ -1,0 +1,16 @@
+fragment PropertyMapPanelFragment on Query {
+  propertyNodes: nodes(types: [PROPERTY]) {
+    id
+    name
+    meta {
+      propertyLocation {
+        longitude
+        latitude
+      }
+    }
+    alerts {
+      count
+      severity
+    }
+  }
+}

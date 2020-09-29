@@ -1,0 +1,15 @@
+@import '~normalize.css';
+@import './vodafone-font.css';
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Vodafone', sans-serif;
+  font-size: fontSize(fs-base);
+  line-height: lineHeight(lh-100);
+  background-color: backgroundColorVodafone(main);
+}
+
+body {
+  overflow-y: scroll;
+}

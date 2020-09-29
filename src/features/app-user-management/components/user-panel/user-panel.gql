@@ -1,0 +1,10 @@
+query AppUserManagmentUserPanelQuery($query: String, $skip: Int, $take: Int) {
+  collection: users(query: $query, skip: $skip, take: $take) {
+    items {
+      id
+      name
+      email
+    }
+    count
+  }
+}

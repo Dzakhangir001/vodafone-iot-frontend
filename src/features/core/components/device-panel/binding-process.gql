@@ -1,0 +1,8 @@
+query BindingProcessQuery($deviceId: ID!) {
+  bindingProcess(deviceId: $deviceId) {
+    id
+    state
+    started
+    message
+  }
+}

@@ -1,0 +1,5 @@
+mutation AppWifiChangeWifiConfigurationMutation($input: ChangeWifiConfigurationInput!) {
+  changeWifiConfiguration(input: $input) {
+    id
+  }
+}

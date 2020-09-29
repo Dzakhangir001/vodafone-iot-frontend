@@ -1,0 +1,199 @@
+query AppSmokeDetectorDataQuery($id: ID!) {
+  data: node(id: $id) {
+    id
+    devices(roles: ["SMOKE_DETECTOR"]) {
+      id
+      site {
+        id
+        name
+      }
+      meta {
+        serial
+      }
+      Battery: metric(name: "Battery", kind: CONTINUOUS) {
+        ... on ContinuousMetric {
+          latestDataPoint {
+            date
+            value
+          }
+        }
+      }
+      BatteryLow: metric(name: "BatteryLow", kind: DISCRETE) {
+        ... on DiscreteMetric {
+          latestDataPoint {
+            date
+            value
+          }
+        }
+      }
+      DustLevel: metric(name: "DustLevel", kind: CONTINUOUS) {
+        ... on ContinuousMetric {
+          latestDataPoint {
+            date
+            value
+          }
+        }
+      }
+      DustLevelRaw: metric(name: "DustLevelRaw", kind: CONTINUOUS) {
+        ... on ContinuousMetric {
+          latestDataPoint {
+            date
+            value
+          }
+        }
+      }
+      HeadConnected: metric(name: "HeadConnected", kind: DISCRETE) {
+        ... on DiscreteMetric {
+          latestDataPoint {
+            date
+            value
+          }
+        }
+      }
+      HeadFault: metric(name: "HeadFault", kind: DISCRETE) {
+        ... on DiscreteMetric {
+          latestDataPoint {
+            date
+            value
+          }
+        }
+      }
+      OpenClose: metric(name: "OpenClose", kind: DISCRETE) {
+        ... on DiscreteMetric {
+          latestDataPoint {
+            date
+            value
+          }
+        }
+      }
+      SounderFlag: metric(name: "SounderFlag", kind: DISCRETE) {
+        ... on DiscreteMetric {
+          latestDataPoint {
+            date
+            value
+          }
+        }
+      }
+      CommsLinkSuccessful: metric(name: "CommsLinkSuccessful", kind: DISCRETE) {
+        ... on DiscreteMetric {
+          latestDataPoint {
+            date
+            value
+          }
+        }
+      }
+      Tamper: metric(name: "Tamper", kind: DISCRETE) {
+        ... on DiscreteMetric {
+          latestDataPoint {
+            date
+            value
+          }
+        }
+      }
+      EOL: metric(name: "EOL", kind: DISCRETE) {
+        ... on DiscreteMetric {
+          latestDataPoint {
+            date
+            value
+          }
+        }
+      }
+      Alarm: metric(name: "Alarm", kind: DISCRETE) {
+        ... on DiscreteMetric {
+          latestDataPoint {
+            date
+            value
+          }
+        }
+      }
+      AlarmCounter: metric(name: "AlarmCounter", kind: CONTINUOUS) {
+        ... on ContinuousMetric {
+          latestDataPoint {
+            date
+            value
+          }
+        }
+      }
+      LastAlarm: metric(name: "LastAlarm", kind: DISCRETE) {
+        ... on DiscreteMetric {
+          latestDataPoint {
+            date
+            value
+          }
+        }
+      }
+      IsInRemovedState: metric(name: "IsInRemovedState", kind: DISCRETE) {
+        ... on DiscreteMetric {
+          latestDataPoint {
+            date
+            value
+          }
+        }
+      }
+      RemovalDuration: metric(name: "RemovalDuration", kind: CONTINUOUS) {
+        ... on ContinuousMetric {
+          latestDataPoint {
+            date
+            value
+          }
+        }
+      }
+      LastRemoval: metric(name: "LastRemoval", kind: DISCRETE) {
+        ... on DiscreteMetric {
+          latestDataPoint {
+            date
+            value
+          }
+        }
+      }
+      CurrentRemovalDuration: metric(name: "CurrentRemovalDuration", kind: CONTINUOUS) {
+        ... on ContinuousMetric {
+          latestDataPoint {
+            date
+            value
+          }
+        }
+      }
+      IsInFraudState: metric(name: "IsInFraudState", kind: DISCRETE) {
+        ... on DiscreteMetric {
+          latestDataPoint {
+            date
+            value
+          }
+        }
+      }
+      FraudCount: metric(name: "FraudCount", kind: CONTINUOUS) {
+        ... on ContinuousMetric {
+          latestDataPoint {
+            date
+            value
+          }
+        }
+      }
+      FraudDuration: metric(name: "FraudDuration", kind: CONTINUOUS) {
+        ... on ContinuousMetric {
+          latestDataPoint {
+            date
+            value
+          }
+        }
+      }
+      LastFraud: metric(name: "LastFraud", kind: DISCRETE) {
+        ... on DiscreteMetric {
+          latestDataPoint {
+            date
+            value
+          }
+        }
+      }
+      CurrentFraudDuration: metric(name: "CurrentFraudDuration", kind: CONTINUOUS) {
+        ... on ContinuousMetric {
+          latestDataPoint {
+            date
+            value
+          }
+        }
+      }
+    }
+  }
+}

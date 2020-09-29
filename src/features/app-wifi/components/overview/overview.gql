@@ -1,0 +1,15 @@
+#import "@core/components/node-content-header/node-content-header.gql"
+#import "@core/router/node-location.gql"
+#import "../wifi-panel/wifi-panel.gql"
+
+query AppWifiOverviewQuery($id: ID!) {
+  node(id: $id) {
+    id
+    ...NodeContentHeaderFragment
+    ...NodeLocationGeneratorFragment
+  }
+  wifis(id: $id) {
+    id
+    ...AppWifiWifiPanelFragment
+  }
+}

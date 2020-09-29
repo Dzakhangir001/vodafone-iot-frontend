@@ -1,0 +1,13 @@
+
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Sensoren-Overlays" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sensor-anlegen-/-ändern" transform="translate(-892.000000, -1060.000000)">
+            <rect id="Rectangle" fill-opacity="0" fill="#000000" x="892" y="1060" width="45" height="45"></rect>
+            <g id="Group-7" transform="translate(905.000000, 1071.000000)">
+                <path d="M0.8008,14.6162 C0.8008,9.1042 8.8008,0.3412 8.8008,0.3412 C8.8008,0.3412 16.8008,9.1042 16.8008,14.6162 C16.8008,20.1682 12.7278,23.3412 8.8008,23.3412 C4.8738,23.3412 0.8008,20.1682 0.8008,14.6162 Z" id="Stroke-1" stroke="#C5C5C5" stroke-width="2"></path>
+                <path d="M8.8008,17.7891 C8.7638,17.7891 5.8918,17.7491 5.8918,14.6161" id="Stroke-3" stroke="#C5C5C5" stroke-width="2"></path>
+                <path d="M31,30 C31,32.209 29.209,34 27,34 C24.791,34 23,32.209 23,30 C23,27.791 24.791,26 27,26 C29.209,26 31,27.791 31,30" id="Fill-5" fill="#e60000"></path>
+            </g>
+        </g>
+    </g>
+</svg>

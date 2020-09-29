@@ -1,0 +1,18 @@
+fragment MasterGatewayFragment on Node {
+  masterGateway {
+    id
+    serial
+    state
+    bootDate
+    firmware
+    meta {
+      name
+      mountingNotes
+    }
+    site {
+      id
+      name
+      type
+    }
+  }
+}

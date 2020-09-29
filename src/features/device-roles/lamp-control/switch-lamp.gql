@@ -1,0 +1,3 @@
+mutation LampControlSwitchLampMutation($input: SwitchLampInput!) {
+  switchLamp(input: $input)
+}

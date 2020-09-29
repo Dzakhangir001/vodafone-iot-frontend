@@ -1,0 +1,17 @@
+subscription MetricChangesSubscription($descriptors: [MetricDescriptorInput!]!) {
+  metricChanges(descriptors: $descriptors) {
+    name
+    ... on ContinuousMetricChange {
+      CONTINUOUS: latestDataPoint {
+        date
+        value
+      }
+    }
+    ... on DiscreteMetricChange {
+      DISCRETE: latestDataPoint {
+        date
+        value
+      }
+    }
+  }
+}

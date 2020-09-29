@@ -1,0 +1,12 @@
+fragment BindingWizardFragment on Node {
+  id
+  type
+  context: ancestor(minDistance: 0, maxDistance: 1, types: [APARTMENT, ROOM]) {
+    id
+    rooms: descendants(minDistance: 0, types: [ROOM]) {
+      id
+      type
+      name
+    }
+  }
+}

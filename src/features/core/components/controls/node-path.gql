@@ -1,0 +1,16 @@
+#import "./node.gql"
+
+query CoreNodeTreeBarControlNodePathQuery($id: ID!) {
+  nodeInfo: node(id: $id) {
+    id
+    ancestors(minDistance: 0) {
+      ...CoreNodeTreeBarControlNodeFragment
+      children {
+        ...CoreNodeTreeBarControlNodeFragment
+        children {
+          ...CoreNodeTreeBarControlNodeFragment
+        }
+      }
+    }
+  }
+}

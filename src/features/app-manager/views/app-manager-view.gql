@@ -1,0 +1,24 @@
+#import "@/features/core/components/property-map-panel/property-map-panel.gql"
+
+query AppManagerViewQuery($roles: [String!]) {
+  deviceRoles(roles: $roles) {
+    role
+    deviceCount
+    devices {
+      id
+      role
+      bound
+      alerts {
+        count
+        severity
+      }
+    }
+  }
+  gateways {
+    id
+    serial
+    state
+    lastReportDate
+  }
+  ...PropertyMapPanelFragment
+}

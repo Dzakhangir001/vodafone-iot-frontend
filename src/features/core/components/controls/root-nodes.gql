@@ -1,0 +1,10 @@
+#import "./node.gql"
+
+query CoreNodeTreeBarControlRootNodesQuery($parentIds: [ID]) {
+  rootNodes: nodes(parentIds: $parentIds) {
+    ...CoreNodeTreeBarControlNodeFragment
+    children {
+      ...CoreNodeTreeBarControlNodeFragment
+    }
+  }
+}

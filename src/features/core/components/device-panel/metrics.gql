@@ -1,0 +1,17 @@
+query CoreDevicePanelMetricsQuery($descriptors: [MetricDescriptorInput!]!) {
+  metrics(descriptors: $descriptors) {
+    name
+    ... on ContinuousMetric {
+      CONTINUOUS: latestDataPoint {
+        date
+        value
+      }
+    }
+    ... on DiscreteMetric {
+      DISCRETE: latestDataPoint {
+        date
+        value
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+fragment IotGatewaysFragment on Node {
+  iotGateways: gateways(deep: true) {
+    id
+    serial
+    state
+    bootDate
+    firmware
+    path {
+      id
+      name
+      type
+    }
+    meta {
+      mountingNotes
+      name
+    }
+    devices {
+      id
+      bound
+    }
+  }
+}

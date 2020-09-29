@@ -1,0 +1,40 @@
+query AppUserManagmentContractViewQuery($id: ID!) {
+  contract(id: $id) {
+    id
+    creationDate
+    modificationDate
+    version
+    externalId
+    meta {
+      salesPartner
+      offer
+      companyName
+      companyAddress {
+        street
+        postal
+        locality
+      }
+      signingDate
+      startDate
+      endDate
+      apartmentCount
+    }
+    customer {
+      id
+      name
+      externalId
+    }
+    contact {
+      id
+      name
+      email
+    }
+    properties {
+      items {
+        id
+        name
+      }
+      count
+    }
+  }
+}

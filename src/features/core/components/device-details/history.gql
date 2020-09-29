@@ -1,0 +1,22 @@
+query CoreDeviceDetailsHistoryQuery($descriptors: [DataSetDescriptorInput!]!) {
+  history: dataSets(descriptors: $descriptors) {
+    ... on ContinuousDataSet {
+      metric {
+        name
+      }
+      CONTINUOUS: dataPoints {
+        date
+        value
+      }
+    }
+    ... on DiscreteDataSet {
+      metric {
+        name
+      }
+      DISCRETE: dataPoints {
+        date
+        value
+      }
+    }
+  }
+}

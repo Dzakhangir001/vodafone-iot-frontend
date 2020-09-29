@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29" height="28">
+    <defs>
+        <clipPath id="a">
+            <path fill="#fff" d="M3 43h12v20H3z"/>
+        </clipPath>
+        <clipPath id="b">
+            <path fill="#fff" d="M0 66h29v3H0z"/>
+        </clipPath>
+        <clipPath id="c">
+            <path fill="#fff" d="M14 43h12v20H14z"/>
+        </clipPath>
+        <clipPath id="d">
+            <path fill="#fff" d="M1 41h27v24H1z"/>
+        </clipPath>
+    </defs>
+    <g fill="none" stroke-width="2">
+        <path stroke="#ccc7cc" d="M3 43v0h12v20H3v0z" clip-path="url(#a)" transform="translate(0 -41)"/>
+        <path stroke="#ccc7cc" d="M0 66v0h29v3H0v0z" clip-path="url(#b)" transform="translate(0 -41)"/>
+        <path stroke="#c8c3c8" d="M14 43v0h12v20H14v0z" clip-path="url(#c)" transform="translate(0 -41)"/>
+        <path stroke="#ccc7cc" d="M1 41v0h27v24H1v0z" clip-path="url(#d)" transform="translate(0 -41)"/>
+    </g>
+</svg>
